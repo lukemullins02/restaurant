@@ -1,4 +1,5 @@
 import lasagnaImage from "./lasagna.jpg";
+import "./styles.css";
 
 function homePage(div) {
   const image = document.createElement("img");
