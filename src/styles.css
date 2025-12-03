@@ -83,6 +83,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  color: rgb(234, 60, 60);
 }
 
 .navbar > p {
@@ -101,5 +102,36 @@ h6 {
 }
 
 .navbar > div > *:hover {
-  color: rgb(135, 133, 133);
+  color: rgb(252, 135, 135);
+}
+
+#home_cont {
+  margin-top: 50px;
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+}
+
+#lasagna {
+  margin-bottom: 50px;
+  height: 300px;
+  width: 450px;
+  border-radius: 1px;
+}
+
+#welcome {
+  margin-bottom: 15px;
+  font-size: 2.1rem;
+}
+
+#rest-desc {
+  text-align: center;
+  padding: 0 40px 0 40px;
+  font-size: 1.3rem;
+}
+
+#menu_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
 }

@@ -1,16 +1,21 @@
 function menuPage(div) {
-  //   const image = document.createElement("img");
-  const heading = document.createElement("h1");
-  //   const description = document.createElement("p");
+  let titles = ["Lasagna", "Ravioli", "Spaghetti", "Meatballs"];
+  let descs = ["1", "2", "3", "4"];
+  const menu_cont = document.createElement("div");
+  menu_cont.id = "menu_cont";
 
-  //   image.src = lasagnaImage;
-  heading.textContent = "Menu";
-  //   description.textContent =
-  //     " Welcome to our Michelin Star rated restaurant! Choose from a wide variety of Italian Cusines from Lasagna, Spaghetti, Meatballs, Ravioli, and more. Also, choose from our selection of wines from Florence.";
-
-  //   div.appendChild(image);
-  div.appendChild(heading);
-  //   div.appendChild(description);
+  for (let i = 0; i < titles.length; i++) {
+    let card = document.createElement("div");
+    let title = document.createElement("p");
+    let desc = document.createElement("p");
+    card.classList.add("card");
+    title.innerHTML = titles[i];
+    desc.innerHTML = descs[i];
+    card.appendChild(title);
+    card.appendChild(desc);
+    menu_cont.appendChild(card);
+  }
+  div.appendChild(menu_cont);
 }
 
 export { menuPage };
