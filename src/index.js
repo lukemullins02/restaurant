@@ -1,11 +1,11 @@
 import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
-import { aboutPage } from "./about.js";
+import { contactPage } from "./contact.js";
 
 const curPage = document.querySelector("#content");
 const homeBtn = document.querySelector("#home");
 const menuBtn = document.querySelector("#menu");
-const aboutBtn = document.querySelector("#about");
+const contactBtn = document.querySelector("#contact");
 
 homeBtn.addEventListener("click", () => {
   let child = curPage.lastElementChild;
@@ -25,13 +25,13 @@ menuBtn.addEventListener("click", () => {
   menuPage(curPage);
 });
 
-aboutBtn.addEventListener("click", () => {
+contactBtn.addEventListener("click", () => {
   let child = curPage.lastElementChild;
   while (child) {
     curPage.removeChild(child);
     child = curPage.lastElementChild;
   }
-  aboutPage(curPage);
+  contactPage(curPage);
 });
 
 homeBtn.click();
